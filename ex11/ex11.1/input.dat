@@ -1,0 +1,8 @@
+0.3
+30
+1000
+
+
+    sigma = input.readline() #data noise
+    Ne = input.readline() #Number of epochs
+    Nt = input.readline() #Number of train data

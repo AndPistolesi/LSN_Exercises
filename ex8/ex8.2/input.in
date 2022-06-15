@@ -1,0 +1,12 @@
+32
+2.7
+2.7
+10
+100
+
+        
+   	in >> T;
+	in >> param1[0];
+	in >> param1[1];
+	in >> nblk;
+	in >> nstep;

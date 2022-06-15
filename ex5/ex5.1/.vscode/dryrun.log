@@ -1,0 +1,9 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/pistol/Desktop/sim_num/ex5/ex5.1'
+g++ -c main.cpp -o main.o -Wall -O3 --std=c++11
+g++    -c -o libs/random.o libs/random.cpp
+g++    -c -o libs/lib.o libs/lib.cpp
+g++    -c -o libs/libd.o libs/libd.cpp
+g++ libs/random.o libs/lib.o libs/libd.o main.o -o main.exe
+make: Leaving directory '/home/pistol/Desktop/sim_num/ex5/ex5.1'
+ 

@@ -1,0 +1,37 @@
+import matplotlib
+import numpy as np
+import matplotlib.pyplot as plt
+
+np.random.seed(1) # Fixing random seed for reproducibility
+
+Lorentz1, Lorentz2, Lorentz10, Lorentz100 = np.loadtxt("ex1.2/mid.dat", usecols=(2,5, 8, 11), delimiter=' , ', unpack='true')
+
+n_bins = 50
+plt.xlabel('x')
+plt.ylabel('p(x)')
+plt.title('Lorentz n=1')
+n, bins, patches = plt.hist(Lorentz1, n_bins, density=True, facecolor='g')
+plt.grid(True)
+plt.figure()
+
+plt.xlabel('x')
+plt.ylabel('p(x)')
+plt.title('Lorentz n=2')
+n, bins, patches = plt.hist(Lorentz2, n_bins, density=True, facecolor='g')
+plt.grid(True)
+plt.figure()
+
+plt.xlabel('x')
+plt.ylabel('p(x)')
+plt.title('Lorentz n=10')
+n, bins, patches = plt.hist(Lorentz10, n_bins, density=True, facecolor='g')
+plt.grid(True)
+plt.figure()
+
+plt.xlabel('x')
+plt.ylabel('p(x)')
+plt.title('Lorentz n=100')
+n, bins, patches = plt.hist(Lorentz100, n_bins, density=True, facecolor='g')
+plt.grid(True)
+
+plt.show()
